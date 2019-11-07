@@ -6,10 +6,7 @@ const asyncHandler = require('express-async-handler')
 ​
 ​
 export default ({ config, db }) => {
-  let api = Router();
-​
-​
-​
+  let api = Router();​
   const Handler = (ref_id, position, temp, user_id, res) => {
 ​
     const countQuery = 'SELECT COUNT(*) FROM pyramid'
@@ -255,9 +252,6 @@ export default ({ config, db }) => {
   }
   )
   )
-​
-​
-​
 ​
   return api;
 };
